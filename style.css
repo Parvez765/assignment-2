@@ -94,10 +94,7 @@ main {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 }
-.icons{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 /* Media Query Mobile */
 
@@ -105,10 +102,14 @@ main {
 
     /* For Main Section */
     main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
-    .container {
+    .container, .card-container {
+        width: 100%;
         display: flex;
         align-items: center;
     }
@@ -126,14 +127,34 @@ main {
     }
 
     .heading-deatil {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .heading-img {
-        width: 100%;
+        width: 80%;
         margin-top: 60px;
-
-
     }
 
+    /* For Card Section */
+    
+   .cards {
+        width: 100%;
+        flex-direction: column;
+   }
+   .card{
+        display: flex;
+        justify-content: center;
+   }
+   
+   .transfer-live {
+       grid-template-columns: repeat(1, 1fr);
+       width: 100%;
+       margin-top: 60px;
+       margin-left: 50px;
+   }
+   .transfer-live img{
+    align-items: center;
+    justify-content: center;
+   }
+  
 }
