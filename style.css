@@ -1,13 +1,16 @@
 /* Common Section */
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
-main{
+
+main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 50px;
 }
-.container{
+
+.container {
     background-color: black;
     width: 1500px;
     padding: 0 40px;
@@ -15,27 +18,29 @@ main{
 }
 
 /* Main Section Detail CSS */
-.detail{
+.detail {
     display: flex;
     justify-content: center;
-    
+
 }
-.heading{
+
+.heading {
     width: 80%;
     margin-left: 35px;
 }
 
-.heading-deatil{
+.heading-deatil {
     font-size: 65px;
     color: white;
     margin-bottom: 0;
 }
-.paragraph{
+
+.paragraph {
     color: white;
     margin-bottom: 35px;
 }
 
-.btn{
+.btn {
     text-decoration: none;
     background-color: red;
     padding: 20px 30px;
@@ -45,48 +50,90 @@ main{
     transition: background-color 0.5s, color 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: white;
     color: black;
 }
-.heading-img{
+
+.heading-img {
     width: 60%;
+
+}
+
+.heading-img img {
+    width: 80%;
+}
+
+/* Card Section */
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.card-option{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    background-color: black;
+    padding: 60px;
+    border-radius: 15px;
+}
+
+.card-option a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 30px;
     
 }
-.heading-img img{
-    width: 80%;
+.transfer-live{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Media Query Mobile */
 
 @media screen and (max-width: 576px) {
+
     /* For Main Section */
-    main{
+    main {
         width: 100%;
     }
-    .container{
+
+    .container {
         display: flex;
         align-items: center;
     }
-    .detail{
+
+    .detail {
         flex-direction: column;
         align-items: center;
     }
-    .heading{
+
+    .heading {
         width: 100%;
         text-align: center;
         margin: 0;
-        
+
     }
 
-    .heading-deatil{
+    .heading-deatil {
         font-size: 40px;
     }
+
     .heading-img {
         width: 100%;
         margin-top: 60px;
-        
-        
+
+
     }
 
 }
