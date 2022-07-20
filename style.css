@@ -1,6 +1,7 @@
 /* Common Section */
 body {
     font-family: 'Poppins', sans-serif;
+   
 }
 
 main {
@@ -26,7 +27,7 @@ main {
 
 .heading {
     width: 80%;
-    margin-left: 35px;
+   
 }
 
 .heading-deatil {
@@ -128,12 +129,18 @@ main {
     font-size: 25px;
     margin: 15px;
 }
+.matches{
+    align-items: center;
+}
 
 /* All Group List */
 .list{
     text-align: center;
 }
 
+.btn-footer{
+    display: none;
+}
 
 /* Media Query Mobile */
 
@@ -189,7 +196,7 @@ main {
        grid-template-columns: repeat(1, 1fr);
        width: 100%;
        margin-top: 60px;
-       margin-left: 50px;
+       
    }
    .transfer-live img{
     align-items: center;
