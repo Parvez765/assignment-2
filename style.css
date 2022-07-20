@@ -204,12 +204,4 @@ main {
     
    }
    /* Footer Section */
-   .footer-container{
-    width: 100%;
-    justify-content: center;
-   }
-   .footer-container ul li{
-    display: block;
-    margin-top: 20px;
-   }
 }
