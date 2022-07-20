@@ -94,10 +94,15 @@ main {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 }
+.transfer-live div img{
+    max-width: 100%;
+}
 .icon{
     margin-right: 15px;
     color: white;
-    
+}
+.icon-set{
+    color: black;
 }
 /* Footer Section */
 .footer-container{
@@ -123,9 +128,12 @@ main {
     font-size: 25px;
     margin: 15px;
 }
-.country{
-    
+
+/* All Group List */
+.list{
+    text-align: center;
 }
+
 
 /* Media Query Mobile */
 
